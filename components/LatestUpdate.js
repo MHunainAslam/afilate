@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import img from '../public/assets/blog/man.jpg'
 
-const LatestUpdate = () => {
+const LatestUpdate = ({ blog }) => {
   return (
     <>
       <div className="container">
@@ -10,86 +10,25 @@ const LatestUpdate = () => {
           latest updates from us
         </p>
         <div className="row theme3-latest-card">
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+          {blog.data.data.map((item) => (
+            <div className="col-lg-3 col-md-4 col-sm-6">
+              <div className='card'>
+                <div className="card-body">
+                  {item.image === null ?
+
+                    <Image src={img} fill={true} />
+                    :
+                    <Image src={blog.url + "/" + item.image} fill={true} />
+                  }
+                  <div className="cardtitle">
+                    {item.title}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <div className='card'>
-              <div className="card-body">
-                <Image src={img} fill={true}></Image>
-                <div className="cardtitle">
-                  Lorem ipsum dolor sit. Lorem ipsum dolor sit.
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
+
+
         </div>
       </div>
     </>

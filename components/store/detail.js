@@ -54,9 +54,13 @@ const detail = ({ storedetailapi, store, img, data }) => {
                 <h2 className='fw-500'> {storedetailapi?.data?.store.name} Coupons & Promo Codes</h2>
             }
             <div className="col-12 ">
-                <div className="col-md-12 bg-white">
-                    <p className="theme3-heading px-2 py-4"> {storedetailapi?.data?.store.name} Coupons & Promo Codes</p>
-                </div>
+                {data.Style === 3 ? <div className="col-md-12 bg-white px-3 py-4">
+                    <p className="theme3-heading-m mb-0"> {storedetailapi?.data?.store.name} Coupons Discount Codes
+                    </p>
+                    <p className="theme3-heading-m-sub ">Select a {storedetailapi?.data?.store.name} promo code that fits your order. click "Reveal Code" to copy the promo code to your clipboard.</p>
+
+                </div> : ""
+                }
                 {storedetailapi?.data?.coupon?.map((item) => {
                     return new Date(item.expire_date) > new Date() ?
 
@@ -73,43 +77,50 @@ const detail = ({ storedetailapi, store, img, data }) => {
                 }
                 )}
             </div>
-            <div className="col-12 ">
+            {data.Style === 3 ? "" :
+                <div className="col-12 ">
 
-                <div class="row mx-auto my-3" id="email-alert-signup">
-                    <div class="col-md-5 py-3 pe-0">
-                        <h3 className='fs-5 text-white mb-0'>Get latest <em class="text-capitalize">{storedetailapi?.data?.store.name} Coupon</em> &amp; deals alert.  <Link href=" /footerpage/ " class="privacy fs-6 text-white">Privacy Policy</Link></h3>
-                    </div>
-                    <div class="col-md-7" yth="">
+                    <div class="row mx-auto my-3" id="email-alert-signup">
+                        <div class="col-md-5 py-3 pe-0">
+                            <h3 className='fs-5 text-white mb-0'>Get latest <em class="text-capitalize">{storedetailapi?.data?.store.name} Coupon</em> &amp; deals alert.  <Link href=" /footerpage/ " class="privacy fs-6 text-white">Privacy Policy</Link></h3>
+                        </div>
+                        <div class="col-md-7" yth="">
 
-                        <form class="search ajax-form search-alert-signup py-3 d-flex w-100  h-85-px" id='maill' onSubmit={handleContact}>
-                            <div class="text-field-holder w-80">
-                                <input id="email_" type="email" name="email" placeholder="Email Address" className='w-100 h-100 px-3' />
-                            </div>
-                            <button type="submit" class=" text-white button button-primary ms-md-3" name="newsletter">
+                            <form class="search ajax-form search-alert-signup py-3 d-flex w-100  h-85-px" id='maill' onSubmit={handleContact}>
+                                <div class="text-field-holder w-80">
+                                    <input id="email_" type="email" name="email" placeholder="Email Address" className='w-100 h-100 px-3' />
+                                </div>
+                                <button type="submit" class=" text-white button button-primary ms-md-3" name="newsletter">
 
-                                {isLoading ? 'Subscribing...' : 'Go'}
+                                    {isLoading ? 'Subscribing...' : 'Go'}
 
-                            </button>
+                                </button>
 
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
+                }
             {/* </>
             }
             
             {expir
                 && <> */}
-            <h2 className='text-start fw-500 mb-0 mt-3'>Expired {storedetailapi?.data?.store.name} Coupons & Promo Codes</h2>
-            <div className="text-expired">
-                {storedetailapi?.data?.coupon?.map((item) => {
 
-                    return new Date(item.expire_date) > new Date() ?
-                        '' :
-                        <Expire expire={item} img={img + "/" + storedetailapi?.data?.store?.logo} />
+         
+                <h2 className='text-start fw-500 mb-0 mt-3'>Expired {storedetailapi?.data?.store.name} Coupons & Promo Codes</h2>
+                <div className="text-expired">
 
-                })}
-            </div>
+                    {storedetailapi?.data?.coupon?.map((item) => {
+
+                        return new Date(item.expire_date) > new Date() ?
+                            '' :
+                            <Expire expire={item} img={img + "/" + storedetailapi?.data?.store?.logo} />
+
+                    })}
+                </div>
+          
+
             {/* </>
             } */}
         </div>

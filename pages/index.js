@@ -16,8 +16,25 @@ export default function Home({ data, setMetas, metas }) {
   const [loading, setloading] = useState(true);
   const [homeData, setHomeData] = useState([]);
   const [err, seterr] = useState(null);
+  const [blog, setblog] = useState({});
 
   useEffect(() => {
+
+
+    fetch(`${APP_URL}api/allblogs?key=${APP_KEY}&paginate=8`).then(res => res.json()).then(json => {
+      setblog(json);
+
+    }).catch(err => {
+    })
+
+
+
+
+  }, []);
+
+  useEffect(() => {
+
+
 
     setMetas({ title: data?.siteTitle ? data?.siteTitle : "Home", metaTitle: data?.siteTitle ? data?.siteTitle : "", metaDescription: `${data?.meta ? data?.meta?.description : ""}`, metaKeyword: `${data?.meta ? data?.meta?.keywords : "More Coupon Codes"}` })
 
@@ -71,7 +88,7 @@ export default function Home({ data, setMetas, metas }) {
           {data.Style === 3 ? <Subscribe data={data} /> :
             ''
           }
-          {data.Style === 3 ? <LatestUpdate />
+          {data.Style === 3 ? <LatestUpdate blog={blog}/>
             : ""
           }
           <Popularcoupon data={data} popCoupon={homeData} />
