@@ -1,0 +1,576 @@
+ 
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  .btn-check:focus+.btn,
+  .btn:focus {
+      outline: 0;
+      box-shadow: unset;
+  }
+
+  @font-face {
+      font-family: aonik-reqular;
+      src: url('../fonts/Aeonik-font-download/Aeonik-Regular.otf');
+  }
+
+  @font-face {
+      font-family: aonik-medium;
+      src: url('../fonts/Aeonik-font-download/Aeonik-Medium.otf');
+  }
+
+  @font-face {
+      font-family: aonik-light;
+      src: url('../fonts/Aeonik-font-download/Aeonik-Light.otf');
+  }
+
+
+  .aonik-reqular {
+      font-family: aonik-reqular;
+
+  }
+
+  .aonik-light {
+      font-family: aonik-light;
+
+  }
+
+  .pblock100 {
+      padding-block: 100px !important;
+  }
+
+  .fs-20 {
+      font-size: 20px;
+  }
+
+  .fs-21 {
+      font-size: 21px;
+  }
+
+  .fs-22 {
+      font-size: 22px;
+  }
+
+  .fs-24 {
+      font-size: 24px;
+  }
+
+  .fs-26 {
+      font-size: 26px;
+  }
+
+  .fs-28 {
+      font-size: 28px;
+  }
+
+  .fs-30 {
+      font-size: 30px;
+  }
+
+  .fs-32 {
+      font-size: 32px;
+  }
+
+  .fs-34 {
+      font-size: 34px;
+  }
+
+  .fs-36 {
+      font-size: 36px;
+  }
+
+  .fs-38 {
+      font-size: 38px;
+  }
+
+  .fs-40 {
+      font-size: 40px;
+  }
+
+  .fs-48 {
+      font-size: 48px;
+  }
+
+  .fs-50 {
+      font-size: 50px;
+  }
+
+  .fs-51 {
+      font-size: 51px;
+  }
+
+  .fs-54 {
+      font-size: 50px;
+  }
+
+  .fs-58 {
+      font-size: 58px;
+  }
+
+  p,
+  small,
+  li,
+  button,
+  a,
+  div {
+      font-family: aonik-reqular;
+      font-size: 18px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: aonik-medium;
+  }
+
+  body {
+      color: #292929;
+  }
+
+  .card-footer {
+      background: transparent;
+      border: 0
+  }
+
+  #section-header header {
+      /*position: absolute;*/
+      width: 100%;
+      padding-block: 30px;
+
+  }
+
+  #section-header header li.nav-item {
+      margin: 0 20px;
+  }
+
+  #section-header header li.nav-item a.nav-link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000;
+  }
+
+  #section-header header a.nav-link.active {
+      font-family: aonik-medium;
+  }
+
+  .navbar-brand {
+      text-align: left;
+  }
+
+  .signature-btn {
+
+      padding: 6px 30px;
+      gap: 21px;
+      color: white;
+      font-family: aonik-light;
+      font-weight: 400;
+      font-size: 21px;
+      letter-spacing: 1.3px;
+      background: linear-gradient(243.64deg, #1665C4 1.38%, #817FF1 66.57%);
+      border-radius: 40px;
+      /*border: 3px solid transparent;*/
+
+  }
+
+  .signature-btn.transparent {
+
+      padding: 6px 30px;
+      gap: 21px;
+      color: #1665C4;
+      font-family: aonik-reqular;
+      background: transparent;
+
+      font-weight: 400;
+      font-size: 21px;
+      letter-spacing: 0.04em;
+      border-radius: 40px;
+      border: 3px solid #1665C4;
+
+  }
+
+  /*a.btn.signature-btn.w-auto:hover {*/
+  /*    background: transparent;*/
+  /*    border: 3px solid #1665C4;*/
+  /*    color: #1665C4;*/
+  /*}*/
+  .cta {
+      padding: 10px;
+      color: #1665C4;
+      font-family: aonik-reqular;
+      font-weight: 400;
+      font-size: 20px;
+  }
+
+  .hero-section {
+      height: 85vh;
+      width: 100%;
+      background: linear-gradient(359.81deg, rgba(255, 255, 255, 0) 66.26%, #FFFFFF 113.71%), url('../images/close-up-young-friends-having-fun-beach 1.png');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .hero-section h1 {
+      font-size: 68px;
+
+  }
+
+  .first-gradient {
+      background: linear-gradient(to right, #1F93E7F0 0%, #1F93E7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .second-gradient {
+      background: linear-gradient(to right, #478ADA -50%, #FF881B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .white-gradient {
+      background: linear-gradient(to right, #ffffff 20%, transparent 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .about-section {
+      background: url('../images/backline.png');
+      background-position: center;
+
+  }
+
+  .about-page-section {
+      background: url(../images/about-back.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+
+  }
+
+  .features-section .card-header,
+  .features-section .card {
+      background-color: transparent;
+      border: 0;
+
+  }
+
+  .be-apart-section {
+      background: #F0F1F1;
+      border-radius: 30px;
+  }
+
+  .legacy-section {
+      background: url('../images/legacy.png');
+      height: 80vh;
+      color: white;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-attachment: fixed;
+      background-size: cover;
+
+  }
+
+  .pricing-section {
+      background: #1F1838;
+
+  }
+
+  .pricing-section .card {
+      text-align: left;
+      background: linear-gradient(180deg, rgba(129, 127, 242, 0.53) 0%, rgba(43, 107, 205, 0.16) 100%);
+      box-shadow: 0px 1px 94px rgba(210, 28, 28, 0.15);
+      border-radius: 24px;
+      color: white;
+      padding: 30px 20px;
+      margin: 40px 8px;
+  }
+
+  .pricing-section .card ul {
+      padding: 0;
+      min-height: 250px;
+      overflow-y: auto;
+  }
+
+  .pricing-section .card li {
+      list-style-type: none;
+      margin: 8px 0;
+      font-family: aonik-light;
+
+  }
+
+  .pricing-section .card li::before {
+      content: url(../images/mark.png);
+      padding-right: 10px;
+      position: relative;
+      top: 2px;
+  }
+
+  .pricing-section .card.card-light {
+      color: black;
+      background: white;
+  }
+
+  .accordion-item {
+      border: 0;
+  }
+
+  button.accordion-button {
+      border-radius: 21px !important;
+      box-shadow: unset !important;
+      background: #F5F5F5 !important;
+      color: #000 !important;
+      margin: 20px 0;
+      font-size: 18px;
+  }
+
+
+  .get-started-section {
+      background: linear-gradient(277.82deg, #F77D56 39.6%, #817FF1 103.54%);
+      color: white;
+  }
+
+  #section-footer {
+      background: #FBFBFF;
+  }
+
+  #section-footer .fs-34 {
+      font-size: 30px;
+  }
+
+  .newsletter {
+      width: 90%;
+      margin: auto;
+  }
+
+  .newsletter input {
+      position: relative;
+      display: block;
+      height: 65px;
+      width: 100%;
+      font-size: 14px;
+      color: #686a6f;
+      line-height: 40px;
+      font-weight: 400;
+      padding: 14px 30px;
+      background-color: #fff;
+      border: 1px solid #1665C3;
+      border-radius: 60px;
+      font-family: var(--thm-b-font);
+      transition: all .3s ease;
+      outline: none;
+  }
+
+  .newsletter button {
+      position: absolute;
+      height: 50px;
+      right: 10px;
+      top: 8px;
+      outline: none;
+      border: none;
+      border-radius: 60px;
+  }
+
+  footer ul {
+      padding: 0;
+  }
+
+  footer li {
+      list-style-type: none;
+      margin: 6px 0;
+  }
+
+  footer li a {
+      color: #000;
+      text-decoration: none;
+  }
+
+  /*.pricing-section .card {*/
+  /*    color: black;*/
+  /*}*/
+  .row.bottom-bar {
+      border-top: 1px solid #C3C3C3;
+      padding: 10px 0;
+  }
+
+  .policy-links {
+      text-align: right;
+  }
+
+  footer .policy-links a,
+  .copyright p {
+      color: #6F6F6F;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0;
+  }
+
+  /*About Page*/
+  section.story-section {
+      background: #F8F8F8;
+  }
+
+  .roadmap-section .container {
+      padding-block: 100px;
+  }
+
+  .roadmap-section {
+      padding-block: 80px;
+  }
+
+  .roadmap-section .container:nth-child(even) .row {
+      /*background: red;*/
+      flex-direction: row-reverse;
+  }
+
+ 
+
+  /*@media (min-width: 1200px) {*/
+  /*    .roadmap-section .container {*/
+  /*        max-width: 1100px;*/
+
+  /*    }*/
+  /*}*/
+  .desktop-show {
+      display: none;
+  }
+
+  .mob-show {
+      text-align: right;
+  }
+
+  @media (min-width: 992px) {
+      .mob-show {
+          display: none;
+      }
+
+      .desktop-show {
+          display: block;
+      }
+  }
+
+  @media (max-width: 768px) {
+      #section-header header .navbar .container {
+          display: grid;
+          grid-template-columns: 45% 43% 12%;
+      }
+
+      #section-header header {
+          /* position: absolute; */
+          width: 100%;
+          padding-block: 15px;
+      }
+
+      .navbar .container img {
+          width: 85%;
+      }
+
+      .signature-btn {
+          padding: 6px 20px;
+          font-size: 15px;
+      }
+
+      .hero-section h1 {
+          font-size: 56px;
+          line-height: 1.1;
+      }
+
+      /*.fs-21 {*/
+      /*    font-size: 19px;*/
+      /*}*/
+      .fs-38 {
+          font-size: 28px;
+      }
+
+      .fs-50 {
+          font-size: 30px;
+      }
+
+      .fs-51 {
+          font-size: 41px;
+      }
+
+      .fs-58 {
+          font-size: 40px;
+      }
+
+      #section-header header {
+          position: unset;
+      }
+
+      .hero-section {
+          height: 140vh;
+      }
+
+      .be-apart-section {
+          width: 90%;
+          border-radius: 15px;
+      }
+
+      .be-apart-section ol {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      .be-apart-section ol li {
+          font-size: 16px;
+          margin: 10px 0;
+      }
+
+      .legacy-section {
+          height: 90vh;
+      }
+
+      .pricing-section .card {
+          margin: 25px 8px;
+      }
+
+      .about-section {
+          background-position: top 100%;
+          background-size: 112%;
+          background-position: top;
+          background-repeat: no-repeat;
+      }
+
+      footer {
+          text-align: center;
+      }
+
+      #section-footer .fs-34 {
+          font-size: 20px;
+      }
+
+      #section-footer .fs-34 svg {
+          height: 22px;
+      }
+
+      #section-footer img.footer-logo {
+          margin-bottom: 60px;
+          padding-block: 35px;
+      }
+
+      .newsletter button {
+          font-size: 12px;
+      }
+
+      footer .link-box div {
+          margin: 15px 0;
+      }
+
+      .mobile-app img {
+          width: 44%;
+      }
+
+      .policy-links {
+          text-align: center;
+      }
+
+      .roadmap-section .container {
+          padding-block: 30px;
+      }
+  }
