@@ -6,7 +6,7 @@ export default function StoreItem({ styledata, item, img, cols, head, allStorez 
     return (
 
         // <div className={`most-popular-stores px-1 py-1 ${data?.Style === 1 ? 'popular-width-1' : 'col-4 '} ${cols === true ? 'col-md-2 ' : 'popular-width-2 '}`}  >
-        <div className={`most-popular-stores px-1 py-1 ${allStorez ? 'my-1 col-6' : theme3 ? 'col-lg-2  ' : 'col-4'}  ${cols === true ? 'col-md-2 ' : 'popular-width-2 '}`}  >
+        <div className={`most-popular-stores px-1 py-1 ${allStorez ? 'my-1 col-6' : theme3 ? 'col-lg-2  theme3-partner' : 'col-4'}  ${cols === true ? 'col-md-2 ' : 'popular-width-2 '}`}  >
             <Link href={`/store/${item.slug}`} className='d-block h-100'>
                 <div className={`card-hover card rounded-0  popular-img-card ${head === true ? 'h-100' : theme3 ? 'h-100 py-3' : ''} `}>
                     <div className={`card-body p-0 popular-img d-flex align-items-center h-85-px ${head === true ? '' : ''} `}>

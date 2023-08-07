@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: nexa-light;
-  src: url('/fonts/Nexa/Nexa-ExtraLight.ttf');
+  src: url('../assets/fonts/Nexa/Nexa-ExtraLight.ttf');
 }
 
 @font-face {
   font-family: nexa-heavy;
-  src: url('/fonts/Nexa/Nexa-Heavy.ttf');
+  src: url('../assets/fonts/Nexa/Nexa-Heavy.ttf');
 }
 
 @font-face {
   font-family: vogue;
-  src: url('/fonts/Vogue/Vogue.ttf');
+  src: url('../assets/fonts/Vogue/Vogue.ttf');
 }
 
 * {
@@ -309,6 +309,7 @@ p.mb-0 p {
   font-weight: 400 !important;
   position: relative;
 }
+
 .button-three-deal {
   background-color: #F58320;
   border-radius: 0 !important;
@@ -332,6 +333,7 @@ p.mb-0 p {
 .button-three-white::after {
   background-color: white !important;
 }
+
 .button-three::after {
   background-color: #efefef;
   border-radius: 0 !important;
@@ -877,6 +879,7 @@ div.list-group>a {
   text-transform: uppercase;
   padding-inline: 5px;
 }
+
 .top-picks-batch-deal {
   background-color: #F58320;
   color: white;
@@ -901,23 +904,28 @@ div.list-group>a {
   font-family: var(--nato);
   font-size: 1rem;
 }
-.footer-3{
+
+.footer-3 {
   background-color: #E8E8E8;
 }
-.footerheading{
+
+.footerheading {
   font-family: nexa-heavy;
   color: #4A494A;
   font-size: 1rem;
   font-weight: 600;
 }
-.footer-3-content, .footer-3 ul li a{
-  color: #4a4949d9 !important ;
+
+.footer-3-content,
+.footer-3 ul li a {
+  color: #4a4949d9 !important;
   font-family: var(--nato);
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: capitalize;
 }
-.theme3-bg{
+
+.theme3-bg {
   background-color: #E8E8E8;
 }
 
@@ -1094,7 +1102,43 @@ div.list-group>a {
   border: 1px dashed #fba100;
   border-radius: 5px;
 }
-
+.blog-card{
+  border: 0;
+  background: transparent;
+  margin-bottom: 20px;
+}
+.blog-card .card-header{
+  border: 0;
+  background: transparent;
+}
+.blog-card img {
+  position: relative !important;
+  height: 250px !important;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.single-bloag-card img {
+  height: 350px !important;
+}
+.blog-cardtitle{
+  font-family: vogue ;
+  color: #4A494A;
+  font-size: 2rem;
+}
+.blog-carddesc{
+  margin-top: 10px;
+  font-family: var(--nato) ;
+  font-size: 1rem;
+  color: #4a4949d9 !important;
+}
+.theme3-partner{
+  filter: opacity(0.5);
+  transition: 0.3s;
+}
+.theme3-partner:hover{
+  filter: opacity(1) !important;
+  transition: 0.3s;
+}
 @media (max-width: 1200px) {}
 
 @media (max-width: 1100px) {

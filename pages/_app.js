@@ -81,7 +81,7 @@ export default function App({ Component, pageProps }) {
                         --header-btn-text: ${data?.header?.button_color || 'white'} ;
                         --footer-bg: ${data?.footer?.background || 'blue'} ;
                         --footer-text: ${data?.footer?.color || 'white'} ;
-                        --body-clr: ${data.Style === 3 ? 'white' : '#eeee'} ;
+                        --body-clr: ${ '#eeee'} ;
                     }`
                 }
             </style>

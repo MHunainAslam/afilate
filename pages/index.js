@@ -59,31 +59,33 @@ export default function Home({ data, setMetas, metas }) {
     return (
 
       <>
-        <Slider data={data} sliderData={homeData} />
+        <section className={`${data.Style === 3 ? "bg-white" : ""}`}>
+          <Slider data={data} sliderData={homeData} />
 
-        {data.Style === 2 ? <Subscribe data={data} /> :
-          ''
-        }
+          {data.Style === 2 ? <Subscribe data={data} /> :
+            ''
+          }
 
-        <Popular styledata={data} popularStore={homeData} grayscale={true} />
+          <Popular styledata={data} popularStore={homeData} grayscale={true} />
 
-        {data.Style === 3 ? <Subscribe data={data} /> :
-          ''
-        }
-        {data.Style === 3 ? <LatestUpdate />
-          : ""
-        }
-        <Popularcoupon data={data} popCoupon={homeData} />
-        {data.Style === 1 ?
-          <>
-            <Newcoupon styledata={data} trendingCoupon={homeData} />
-            {/* <Couponslider styledata={data} /> */}
-          </>
-          : ""
-        }
-        {data.Style === 3 ? "" :
-          <Favorite styledata={data} />
-        }
+          {data.Style === 3 ? <Subscribe data={data} /> :
+            ''
+          }
+          {data.Style === 3 ? <LatestUpdate />
+            : ""
+          }
+          <Popularcoupon data={data} popCoupon={homeData} />
+          {data.Style === 1 ?
+            <>
+              <Newcoupon styledata={data} trendingCoupon={homeData} />
+              {/* <Couponslider styledata={data} /> */}
+            </>
+            : ""
+          }
+          {data.Style === 3 ? "" :
+            <Favorite styledata={data} />
+          }
+        </section>
       </>
     )
   }

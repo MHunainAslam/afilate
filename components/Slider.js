@@ -37,7 +37,7 @@ const Slider = ({ data, sliderData }) => {
                         </div>
                     </section>
                     : data.Style === 3 ?
-                        <section className="bg-white theme3-banner-bg">
+                        <section className="bg-white theme3-banner-bg  overflow-hidden">
                             <div className="container  theme3-banner">
                                 <div className="row">
                                     <div className='col-md-8 pt-5'>
