@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: nexa-light;
-  src: url('../assets/fonts/Nexa/Nexa-ExtraLight.ttf');
+  src: url('../public/fonts/Nexa/Nexa-ExtraLight.ttf');
 }
 
 @font-face {
   font-family: nexa-heavy;
-  src: url('../assets/fonts/Nexa/Nexa-Heavy.ttf');
+  src: url('../public/fonts/Nexa/Nexa-Heavy.ttf');
 }
 
 @font-face {
   font-family: vogue;
-  src: url('../assets/fonts/Vogue/Vogue.ttf');
+  src: url('../public/fonts/Vogue/Vogue.ttf');
 }
 
 * {
