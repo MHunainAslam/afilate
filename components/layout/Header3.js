@@ -37,7 +37,7 @@ const Header1 = ({ data, category, season, coupons, country }) => {
                                 <Link className="nav-link active text-header" href="/blog" >Blogs</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active text-header" href="/all-stores" >Submit Coupon</Link>
+                                <Link className="nav-link active text-header" href="#" >Submit Coupon</Link>
                             </li>
 
                             {data.header.button_url != '' ?

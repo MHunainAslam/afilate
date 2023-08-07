@@ -9,7 +9,8 @@ const Favoritebrands = ({ styledata }) => {
     return (
         <>
 
-            <div className='container pb-3 py-md-5'>
+            <div className='container pb-3 mt-5 py-md-5'>
+                
                 <h3 className='fw-500 head1 '> {styledata === 1 ? "CODES FOR YOUR FAVOURITE BRANDS" : "Shop Your Desired Categories"} </h3>
                 <div className="row bg-white py-1 ">
                     {styledata?.brands?.map(item => <div className="col-6 col-md-3 my-2 fav-brand-coupon"> <Link href={`/store/${item.slug}`}> {item.name} </Link>  </div>)}

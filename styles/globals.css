@@ -789,12 +789,14 @@ div.list-group>a {
   color: #4A494A;
   font-family: vogue;
   font-size: 3rem !important;
+  text-transform: uppercase;
 }
 
 .theme3-heading-m {
   color: #4A494A;
   font-family: vogue;
   font-size: 2rem !important;
+  text-transform: uppercase;
 }
 
 .theme3-heading-m-sub {
