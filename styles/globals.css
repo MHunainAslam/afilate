@@ -759,7 +759,7 @@ div.list-group>a {
 }
 
 .theme3-banner-bg {
-  background: url('../public/assets/slider/asset1.png');
+  background: url(../public/assets/slider/asset1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
