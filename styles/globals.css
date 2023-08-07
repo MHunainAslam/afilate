@@ -790,7 +790,7 @@ div.list-group>a {
 }
 
 .theme3-partner-bg {
-  background: url('../public/assets/popular-coupon/theme3-partner-bg.png');
+  background: url('/assets/popular-coupon/theme3-partner-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
