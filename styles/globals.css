@@ -330,6 +330,7 @@ p.mb-0 p {
   font-family: var(--nato);
   font-weight: 400 !important;
   position: relative;
+  border-radius: 5px !important;
 }
 
 .button-three-deal {
@@ -339,6 +340,7 @@ p.mb-0 p {
   font-family: var(--nato);
   font-weight: 400 !important;
   position: relative;
+  border-radius: 5px !important;
 }
 
 .button-three::before {
@@ -384,6 +386,11 @@ p.new-tag i {
 
 .button-primary {
   background-color: var(--secondary);
+}
+
+.button3-primary {
+  background-color: var(--secondary);
+  color: white !important;
 }
 
 .header-btn-bg {
@@ -838,6 +845,11 @@ div.list-group>a {
   font-family: var(--nato);
   font-size: 1rem !important;
 }
+.theme3-heading-m-sub p {
+  color: #4A494A;
+  font-family: var(--nato);
+  font-size: 0.8rem !important;
+}
 
 .theme3-para {
   color: #4A494A;
@@ -846,12 +858,16 @@ div.list-group>a {
 }
 
 .theme3-submit-btn {
-  background-color: #EFEFEF;
+  background-color: transparent;
+  border: 1px solid #2A388A;
 }
 
 .theme3-submit-btn a {
-  background-color: #EFEFEF;
-  color: #4A494A;
+  background-color: transparent;
+  color: #2A388A;
+  font-family: 'poppins';
+  font-size: 1rem;
+
 }
 
 .theme3-partner-bg {
@@ -915,7 +931,7 @@ div.list-group>a {
 .theme3-top-picks {
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .025), 0 2px 8px 0 rgba(0, 0, 0, .01);
-  border: 1px solid  #e0e0e0;
+  border: 1px solid #e0e0e0;
   border-radius: 0.5rem;
   height: 100%;
 }
@@ -927,7 +943,7 @@ div.list-group>a {
 .theme3-top-picks img {
   object-fit: contain;
   /* padding: 15px; */
-  height: 100px !important;
+  height: 70px !important;
   position: relative !important;
 }
 
@@ -942,30 +958,35 @@ div.list-group>a {
 .top-picks-batch-code {
   background-color: #2A388A;
   color: white;
-  border-radius: 3px;
+  border-radius: 1rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   /* font-weight: 500; */
   text-align: center;
+  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
+  font-size: 0.8rem;
   margin-top: 5px;
   text-transform: uppercase;
-  padding-inline: 5px;
+  padding-inline: 8px;
 }
 
 .top-picks-batch-deal {
   background-color: #F58320;
   color: white;
+  border-radius: 1rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   /* font-weight: 500; */
   text-align: center;
+  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
+  font-size: 0.8rem;
   margin-top: 5px;
   text-transform: uppercase;
-  padding-inline: 5px;
+  padding-inline: 8px;
 }
 
 .toppick-card-brand {
@@ -1073,7 +1094,8 @@ div.list-group>a {
 }
 
 .product-sidepanelapi p {
-  line-height: 1.1;
+  font-size: 0.8rem;
+  font-family: 'poppins';
 }
 
 .custom-them>img {

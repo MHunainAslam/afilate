@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
+import { toast } from 'react-hot-toast'
 
 
 const sidepanel = ({ data, sidepanelapi, img }) => {
@@ -117,7 +119,7 @@ const sidepanel = ({ data, sidepanelapi, img }) => {
                                     <h4 className='my-2 fs-4 footerheading'>{sidepanelapi?.data?.store?.name}</h4>
                                     <p className='lh-sm theme3-para' dangerouslySetInnerHTML={{ __html: sidepanelapi?.data?.store?.description }}></p>
 
-                                    <div className='text-center py-3 theme3-submit-btn'> <Link href={`${sidepanelapi?.data?.store?.affiliate_url}`} className='h4 p-2'  data-bs-toggle="modal" data-bs-target="#submitmidal" >Submit Coupon</Link ></div>
+                                    <div className='text-center py-2 theme3-submit-btn'> <Link href={`${sidepanelapi?.data?.store?.affiliate_url}`} className='h4' data-bs-toggle="modal" data-bs-target="#submitmidal" >Submit Coupon</Link ></div>
 
                                 </div>
                             </div>
@@ -131,7 +133,7 @@ const sidepanel = ({ data, sidepanelapi, img }) => {
                                         <div class="text-field-holder w-100">
                                             <input id="email_" type="email" name="email" placeholder="Email Address" className='w-100 h-100 p-3 rounded-5' />
                                         </div>
-                                        <button type="submit" class=" text-white button button-primary mt-3 w-100 rounded-5" name="newsletter">
+                                        <button type="submit" class=" text-white button button3-primary py-2 mt-3 w-100 rounded-5" name="newsletter">
 
                                             {isLoading ? 'Subscribing...' : 'Go'}
 

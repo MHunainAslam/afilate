@@ -155,61 +155,44 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle, padd }) => {
                         </div>
                     </div >
                     : data.Style === 3 ?
-                        <div className={`bg-white my-2 h-100 ${padd ? 'py-2 px-3' : 'p-3 '} coupon ${isSingle && 'theme-3-card'}`}>
+                        <div className={`bg-white theme3-top-picks my-2 h-100 ${padd ? 'py-2 px-3' : 'p-3 '} coupon ${isSingle && 'theme-3-card'}`}>
                             <div className="row">
                                 <div className={`${isSingle ? 'col-md-2 col-3' : 'col-2'} my-auto`}>
 
-                                    <Image src={img} fill={true} className='h-85-px object-fit-contain position-relative' />
+                                    <Image src={img} fill={true} className=' object-fit-contain position-relative' />
                                     {coupon?.code ?
                                         <div className="top-picks-batch-code">code</div>
-                                        :  <div className="top-picks-batch-deal">deal</div>
+                                        : <div className="top-picks-batch-deal">deal</div>
                                     }
                                 </div>
                                 <div className={`border-lrft my-auto px-2 px-md-4 ${isSingle ? 'col-sm-7 col-9 ' : 'col-8'}`}>
                                     <Link href="#" className={`h3`}>{coupon?.title}</Link>
                                     <p className={`tr-2 d-md-block lh-1 ${!isSingle && 'd-none'} fs-6 theme3-heading-m-sub `} dangerouslySetInnerHTML={{ __html: coupon.description }}></p>
                                     {coupon.featured === 'on' ?
-                                        <div className='d-flex mb-3'>
-                                            <div className='col'>
-                                                <p class="expiredate m-0   text-primary"><i class="fas fa-star  text-primary" aria-hidden="true"></i> New Coupon</p>
-                                            </div>
-                                            <div className={`col d-flex justify-content-between }`}>
-                                                <div className=' text-center ms-2 my-auto'>
-                                                    <p className='x-small mb-0 expiredate'>Expires:  {coupon.expire_date ?
-                                                        `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`
-                                                        :
-                                                        ' Expire Soon...'
-                                                    }
-
-                                                    </p>
-                                                </div>
-                                                <div></div>
-                                            </div>
-                                        </div>
+                                      ""
                                         : ''}
 
-                                  
+
                                 </div>
                                 {coupon?.code ?
-                                    <div className={`${isSingle ? 'col-sm-3 col-12' : 'card-footer bg-transparent col-3'}`}>
+                                    <div className={`my-auto ${isSingle ? 'col-sm-3 col-12' : 'card-footer bg-transparent col-3'}`}>
 
-                                        <div class=" position-relative ">
-                                            <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} class="button button-three button-three-white px-2 py-1 w-100 ">
+                                        <div class=" position-relative text-center">
+                                            <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} class="button button-three button-three-white px-4 py-1  ">
                                                 <span>Show Code</span>
                                             </Link>
                                             {/* <div class="show-code-2-code overflow-hidden justify-content-end fw-bold d-flex align-items-center my-auto">{coupon.code}</div> */}
                                         </div>
-                                        {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
-                                    </div>
+                                       </div>
                                     :
-                                    <div className={`text-end m-auto my-auto fw-bold ${isSingle ? 'col-sm-3 col-12' : 'col-3'}`}>
+                                    <div className={`text-center m-auto my-auto fw-bold ${isSingle ? 'col-sm-3 col-12' : 'col-3'}`}>
 
 
-                                        <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} className={`p-2 d-md-block d-none button button-three-deal`}  >
+                                        <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} className={`px-4 py-1  button button-three-deal`}  >
                                             Show Deal
                                         </Link>
 
-                                        {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
+                                      
                                     </div>
                                 }
                             </div>

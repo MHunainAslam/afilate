@@ -17,7 +17,9 @@ const contact = ({ setMetas, metas }) => {
 
         setIsLoading(true);
 
-        let name = e.target.elements['name'].value, email = e.target.elements['email'].value, message = e.target.elements['message'].value;
+        let name = e.target.elements['name'].value,
+            email = e.target.elements['email'].value,
+            message = e.target.elements['message'].value;
         fetch(`${APP_URL}api/contact`, {
             headers: {
                 'Content-Type': 'application/json'
