@@ -5,21 +5,39 @@
 }
 
 @font-face {
-  font-family: nexa-light;
-  src: url('../public/fonts/theme3-fonts/Nexa-ExtraLight.otf');
+  font-family: 'nexa-light';
+  src: url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.eot');
+  src: url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.woff2') format('woff2'),
+    url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.woff') format('woff'),
+    url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: nexa-heavy;
-  src: url('../public/fonts/theme3-fonts/Nexa-Heavy.otf');
+  font-family: 'nexa-heavy';
+  src: url('../public/fonts/theme3-fonts/allfonts/Nexa-Heavy.eot');
+  src: url('../public/fonts/theme3-fonts/allfonts/Nexa-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/theme3-fonts/allfonts/Nexa-Heavy.woff2') format('woff2'),
+    url('../public/fonts/theme3-fonts/allfonts/Nexa-Heavy.woff') format('woff'),
+    url('../public/fonts/theme3-fonts/allfonts/Nexa-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: vogue;
-  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.ttf');
+  font-family: 'vogue';
   src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.eot');
-  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.woff');
-  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.woff2');
+  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.woff2') format('woff2'),
+    url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.woff') format('woff'),
+    url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -771,12 +789,14 @@ div.list-group>a {
   height: 75vh;
 
 }
-.theme3-banner{
+
+.theme3-banner {
   height: 100%;
 }
+
 .theme3-banner img {
   position: absolute;
-  top: -5%  !important;
+  top: -5% !important;
   margin-left: auto;
   height: 105% !important;
   object-fit: cover;
@@ -1188,10 +1208,12 @@ div.list-group>a {
   font-size: 1rem;
   color: #4a4949d9 !important;
 }
-.blog-carddesc img{
-width: 100%;
-margin-top: 35px;
+
+.blog-carddesc img {
+  width: 100%;
+  margin-top: 35px;
 }
+
 .theme3-partner {
   filter: opacity(0.5);
   transition: 0.3s;
