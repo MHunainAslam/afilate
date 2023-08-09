@@ -10,7 +10,7 @@ const Popularcoupon = ({ data, popCoupon }) => {
 
     return (
         <>
-            <div className="container mt-5">
+            <div className="container py-5">
                 {data.Style === 3 ? <p className='theme3-heading text-center'>Our Top Picks</p>
                     :
                     <h3 className='head1 pt-5'>Most Popular Coupons</h3>

@@ -117,7 +117,7 @@ const sidepanel = ({ data, sidepanelapi, img }) => {
                                     <h4 className='my-2 fs-4 footerheading'>{sidepanelapi?.data?.store?.name}</h4>
                                     <p className='lh-sm theme3-para' dangerouslySetInnerHTML={{ __html: sidepanelapi?.data?.store?.description }}></p>
 
-                                    <div className='text-center py-3 theme3-submit-btn'> <Link href={`${sidepanelapi?.data?.store?.affiliate_url}`} className='h4 p-2'>Submit Coupon</Link ></div>
+                                    <div className='text-center py-3 theme3-submit-btn'> <Link href={`${sidepanelapi?.data?.store?.affiliate_url}`} className='h4 p-2'  data-bs-toggle="modal" data-bs-target="#submitmidal" >Submit Coupon</Link ></div>
 
                                 </div>
                             </div>

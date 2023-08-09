@@ -68,7 +68,6 @@ const Storedetail = ({ data, metas, setMetas }) => {
 
 
   }, [slug]);
-
   if (loading) return <div className='bg-white vh-100 vw-100 d-flex justify-content-center overflow-hidden align-items-center position-fixed top-0 start-0 z-1'><Spinner /></div>
 
   return (

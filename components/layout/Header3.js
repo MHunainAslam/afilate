@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import country from '@/pages/country/[slug]'
 import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Searchbar from '../Searchbar'
+import Theme_3_Modal from '../Modal/Theme_3_Modal'
 
 const Header1 = ({ data, category, season, coupons, country }) => {
 
@@ -37,7 +38,7 @@ const Header1 = ({ data, category, season, coupons, country }) => {
                                 <Link className="nav-link active text-header" href="/blog" >Blogs</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active text-header" href="#" >Submit Coupon</Link>
+                                <Link className="nav-link active text-header" href="#" data-bs-toggle="modal" data-bs-target="#submitmidal">Submit Coupon</Link>
                             </li>
 
                             {data.header.button_url != '' ?
@@ -53,6 +54,8 @@ const Header1 = ({ data, category, season, coupons, country }) => {
                 </div>
             </nav>
 
+
+            <Theme_3_Modal />
         </>
     )
 }

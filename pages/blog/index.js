@@ -3,17 +3,19 @@ import React, { useEffect, useState } from 'react'
 import img from '../../public/assets/blog/man.jpg'
 import Link from 'next/link'
 import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
+import Spinner from '@/components/Spinner'
 
 const index = () => {
     const [blog, setblog] = useState({});
     const [err, setError] = useState(false);
+    const [loading, setloading] = useState(true);
 
     useEffect(() => {
 
 
         fetch(`${APP_URL}api/allblogs?key=${APP_KEY}`).then(res => res.json()).then(json => {
             setblog(json);
-
+            setloading(false)
         }).catch(err => {
         })
 
@@ -21,7 +23,11 @@ const index = () => {
 
 
     }, []);
+
     console.log("setbloga", blog.data)
+
+    if (loading) return <div className='bg-white vh-100 vw-100 d-flex justify-content-center overflow-hidden align-items-center position-fixed top-0 start-0 z-1'><Spinner /></div>
+
     return (
         <>
             <section className='my-5'>
@@ -40,7 +46,7 @@ const index = () => {
                                     </div>
                                     <div className="card-body">
                                         <div className="blog-cardtitle">{item.title}</div>
-                                        <div className="blog-carddesc" dangerouslySetInnerHTML={{ __html: item.short_description}}>
+                                        <div className="blog-carddesc" dangerouslySetInnerHTML={{ __html: item.short_description }}>
                                             {/* {item.short_description} */}
                                         </div>
                                     </div>

@@ -37,10 +37,10 @@ const Slider = ({ data, sliderData }) => {
                         </div>
                     </section>
                     : data.Style === 3 ?
-                        <section className="bg-white theme3-banner-bg  overflow-hidden">
+                        <section className="bg-white theme3-banner-bg  ">
                             <div className="container  theme3-banner">
-                                <div className="row">
-                                    <div className='col-md-8 pt-5'>
+                                <div className="row h-100">
+                                    <div className='col-md-7 pt-5'>
                                         <p className="theme3-banner-heading mb-0">
                                             Latest Discounts & Promo Codes
                                         </p>
@@ -48,8 +48,8 @@ const Slider = ({ data, sliderData }) => {
                                         Get latest updates from the world of online shopping
                                         </p>
                                     </div>
-                                    <div className="col-md-4">
-                                    <Image src={`${sliderData?.slider_url + '/' + sliderData?.slider[sliderData?.slider?.length - 1].media}`} fill={true} className="position-relative custom-slider" />
+                                    <div className="col-md-5 position-relative">
+                                    <Image src={`${sliderData?.slider_url + '/' + sliderData?.slider[sliderData?.slider?.length - 1].media}`} fill={true} className="" />
                                 </div>
                                 </div>
                             </div>

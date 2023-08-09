@@ -7,7 +7,7 @@ const Footer2 = ({ season, country, data }) => {
     console.log(FOOTER_ABOUT);
     return (
         <>
-            <div className="footer-3">
+            <div className="footer-3 ">
                 <div className="container p-5 ">
                     <div className="row">
 

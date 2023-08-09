@@ -100,7 +100,7 @@ export default function App({ Component, pageProps }) {
                             <Header3 data={data} category={category} season={season} coupons={coupons} country={country} />
 :''
                 }
-                <div className={`min-vh-90`}>
+                <div className={`min-vh-90 `}>
                     <Component {...pageProps} data={data} metas={metas} setMetas={setMetas} />
                 </div>
                 <Toaster

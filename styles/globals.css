@@ -765,12 +765,19 @@ div.list-group>a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 75vh;
 
 }
-
+.theme3-banner{
+  height: 100%;
+}
 .theme3-banner img {
-  width: 300px !important;
+  position: absolute;
+  top: -5%  !important;
   margin-left: auto;
+  height: 105% !important;
+  object-fit: cover;
+  object-position: top;
 }
 
 .theme3-banner-heading {
@@ -890,9 +897,9 @@ div.list-group>a {
 }
 
 .theme3-top-picks img {
-  object-fit: cover;
+  object-fit: contain;
   /* padding: 15px; */
-  height: auto !important;
+  height: 100px !important;
   position: relative !important;
 }
 
@@ -1178,7 +1185,10 @@ div.list-group>a {
   font-size: 1rem;
   color: #4a4949d9 !important;
 }
-
+.blog-carddesc img{
+width: 100%;
+margin-top: 35px;
+}
 .theme3-partner {
   filter: opacity(0.5);
   transition: 0.3s;
