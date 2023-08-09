@@ -15,7 +15,7 @@ const LatestUpdate = ({ blog }) => {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className='card'>
               <Link href={`/blog/${item.slug}`} className=" h-100">
-                <div className="card-body">
+                <div className="card-body ">
                   {item.image === null ?
 
                     <Image src={img} fill={true} />

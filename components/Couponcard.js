@@ -60,9 +60,9 @@ const Couponcard = ({ data, item, img }) => {
                     </div>
                     : data.Style === 3 ?
                         <div className="card theme3-top-picks">
-                            <div className="card-body">
-                                <div className="row align-items-center">
-                                    <div className='col-md-3 mb-4 mb-md-0'>
+                            <div className="card-body py-0">
+                                <div className="row align-items-center ">
+                                    <div className='col-md-3 mb-4 mb-md-0 border-end py-3'>
                                         <Image src={`${!img ? '' : img + "/" + item?.store_logo}`} alt={item.store_name} fill={true} ></Image>
                                         <div className={`top-picks-batch-${item.code ? 'code' : 'deal'}`}>
                                             {item.code ? 'code' : 'deal'}

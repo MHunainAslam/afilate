@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --nato: 'Noto Sans', sans-serif;
 }
 
-@font-face {
-  font-family: 'nexa-light';
+/* @font-face {
+  font-family: ''Poppins', sans-serif';
   src: url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.eot');
   src: url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.eot?#iefix') format('embedded-opentype'),
     url('../public/fonts/theme3-fonts/allfonts/Nexa-ExtraLight.woff2') format('woff2'),
@@ -14,9 +15,9 @@
   font-weight: 100;
   font-style: normal;
   font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: 'nexa-heavy';
   src: url('../public/fonts/theme3-fonts/allfonts/Nexa-Heavy.eot');
   src: url('../public/fonts/theme3-fonts/allfonts/Nexa-Heavy.eot?#iefix') format('embedded-opentype'),
@@ -26,7 +27,7 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: 'vogue';
@@ -806,12 +807,14 @@ div.list-group>a {
 
 .theme3-banner-heading {
   font-weight: 700;
-  font-family: nexa-heavy;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   font-size: 2rem;
 }
 
 .theme3-banner-sub-heading {
-  font-family: nexa-light;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   font-size: 1.5rem;
   /* line-height: auto; */
 }
@@ -911,9 +914,9 @@ div.list-group>a {
 
 .theme3-top-picks {
   background-color: white;
-  
-  border: 0;
-  border-radius: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .025), 0 2px 8px 0 rgba(0, 0, 0, .01);
+  border: 1px solid  #e0e0e0;
+  border-radius: 0.5rem;
   height: 100%;
 }
 
@@ -940,7 +943,8 @@ div.list-group>a {
   background-color: #2A388A;
   color: white;
   border-radius: 3px;
-  font-family: 'nexa-light';
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   /* font-weight: 500; */
   text-align: center;
   width: fit-content;
@@ -953,7 +957,8 @@ div.list-group>a {
 .top-picks-batch-deal {
   background-color: #F58320;
   color: white;
-  font-family: 'nexa-light';
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   /* font-weight: 500; */
   text-align: center;
   width: fit-content;
@@ -980,7 +985,8 @@ div.list-group>a {
 }
 
 .footerheading {
-  font-family: nexa-heavy;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   color: #4A494A;
   font-size: 1rem;
   font-weight: 600;
