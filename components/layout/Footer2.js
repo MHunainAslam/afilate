@@ -62,7 +62,7 @@ const Footer2 = ({ season, country, data }) => {
                         <div class="col-md-12">
                             <div class="copright_text">
                                 <hr className='text-white opacity-1' />
-                                <p className='text-white'>{FOOTER_DESC}</p>
+                                <p className='text-white'>{data.siteTitle}   {FOOTER_DESC}</p>
                             </div>
                         </div>
                     </div>

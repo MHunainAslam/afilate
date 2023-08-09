@@ -4,7 +4,7 @@ import Link from 'next/link'
 import logo from '../../public/assets/logo-white.png'
 
 const Footer2 = ({ season, country, data }) => {
-    console.log(FOOTER_ABOUT);
+    console.log("aas", data);
     return (
         <>
             <div className="footer-3 ">
@@ -77,12 +77,12 @@ const Footer2 = ({ season, country, data }) => {
                             <Link href={'/'} className="footer-2-logo">
                                 <Image src={data?.url + "/" + data?.logo?.footer || logo} alt="" className={'position-relative my-1 header-logo w-100'} style={{ objectFit: 'contain' }} fill={true}></Image>
                             </Link>
-                            <p className='footer-3-content'>{FOOTER_ABOUT}</p>
+                            <p className='footer-3-content'>{data.siteTitle}        {FOOTER_DESC}</p>
 
                         </div>
                         <div class="col-md-12">
                             <div class="copright_text">
-                                <p className='footer-3-content mt-4'>Copyrights 2023 - Samplesite.com - Great discounts with samplesite.</p>
+                                <p className='footer-3-content mt-4'>Copyrights 2023 - {data.siteTitle}</p>
                             </div>
                         </div>
                     </div>

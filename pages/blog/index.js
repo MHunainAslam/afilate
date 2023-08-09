@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import img from '../../public/assets/blog/man.jpg'
+import img from '../../public/assets/blog/placeholder.jpg'
 import Link from 'next/link'
 import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Spinner from '@/components/Spinner'
