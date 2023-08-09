@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import img from '../public/assets/blog/man.jpg'
+import Link from 'next/link'
 
 const LatestUpdate = ({ blog }) => {
   return (
@@ -13,6 +14,7 @@ const LatestUpdate = ({ blog }) => {
           {blog.data.data.map((item) => (
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className='card'>
+              <Link href={`/blog/${item.slug}`} className=" h-100">
                 <div className="card-body">
                   {item.image === null ?
 
@@ -24,6 +26,7 @@ const LatestUpdate = ({ blog }) => {
                     {item.title}
                   </div>
                 </div>
+                </Link>
               </div>
             </div>
           ))}

@@ -77,7 +77,7 @@ const Couponcard = ({ data, item, img }) => {
                                             <Link href={`${item.url}`} onClick={() => { window.open(`/store/${item.store_slug}/${item.id}`) }} className='button button-three-deal w-100 px-2 py-1'>Show Deal</Link>
                                             : <>
                                                 <div class="btncard_link position-relative ">
-                                                    <Link href={`${item.url}`} onClick={() => { window.open(`/store/${item.store_slug}/${item.id}`) }} class="button button-three px-2 py-1 w-100 ">
+                                                    <Link href={`${item.url}`} onClick={() => { window.open(`/store/${item.store_slug}/${item.id}`) }} class="button button-three button-three-white px-2 py-1 w-100 ">
                                                         <span>Show Code</span>
                                                     </Link>
                                                     {/* <div class="show-code-2-code overflow-hidden justify-content-end fw-bold d-flex align-items-center  my-auto">{item.code}</div> */}

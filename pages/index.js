@@ -76,7 +76,7 @@ export default function Home({ data, setMetas, metas }) {
     return (
 
       <>
-        <section className={`${data.Style === 3 ? "bg-white" : ""}`}>
+        <section>
           <Slider data={data} sliderData={homeData} />
 
           {data.Style === 2 ? <Subscribe data={data} /> :
