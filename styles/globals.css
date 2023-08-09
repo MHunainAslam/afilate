@@ -850,6 +850,10 @@ div.list-group>a {
   font-family: var(--nato);
   font-size: 0.8rem !important;
 }
+.theme3-heading-m-sub-ex p {
+  font-family: var(--nato);
+  font-size: 0.8rem !important;
+}
 
 .theme3-para {
   color: #4A494A;

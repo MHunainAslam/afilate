@@ -115,7 +115,7 @@ const detail = ({ storedetailapi, store, img, data }) => {
 
                         return new Date(item.expire_date) > new Date() ?
                             '' :
-                            <Expire expire={item} img={img + "/" + storedetailapi?.data?.store?.logo} />
+                            <Expire data={data} expire={item} img={img + "/" + storedetailapi?.data?.store?.logo} />
 
                     })}
                 </div>
