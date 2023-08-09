@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Spinner from '@/components/Spinner'
 
-const blogslug = () => {
+const blogslug = ({setMetas, metas}) => {
 
 
     const [blog, setblog] = useState()
@@ -21,11 +21,13 @@ const blogslug = () => {
         fetch(`${APP_URL}api/single-blog/${slug}?key=${APP_KEY}`).then(res => res.json()).then((json) => {
             setblog(json);
             setloading(false)
+            setMetas({ ...metas, title: `${json?.data?.title ? json?.data?.title + '  Blog' : ' Blog'}`, metaTitle: json?.data?.seo_title, metaDescription: json?.data?.seo_description, metaKeyword: json?.data?.meta_key });
             // console.log("json", json.data.slug);
 
         }).catch(err => {
             setError('something went wrong!');
             setloading(false);
+            setMetas({ ...metas, title: `${json?.data?.title ? json?.data?.title + '  Blog' : ' Blog'}`, metaTitle: json?.data?.seo_title, metaDescription: json?.data?.seo_description, metaKeyword: json?.data?.meta_key });
         })
 
     }, [slug])
@@ -45,7 +47,7 @@ const blogslug = () => {
                         <div className="col-md-10">
                             <div className="card single-bloag-card blog-card h-100">
                                 <div className="card-header col-md-10 mx-auto">
-                                    {blog?.image === null ?
+                                    {blog?.data.image === null ?
 
                                         <Image src={img} fill={true} />
                                         :
@@ -59,7 +61,7 @@ const blogslug = () => {
 
                                         {blog?.data.title}
                                     </div>
-                                    <div className="blog-carddesc mt-5 text-center" dangerouslySetInnerHTML={{ __html: blog?.data.long_description }}>
+                                    <div className="blog-carddesc mt-5" dangerouslySetInnerHTML={{ __html: blog?.data.long_description }}>
 
                                     </div>
                                 </div>
