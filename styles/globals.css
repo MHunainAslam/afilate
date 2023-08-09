@@ -16,7 +16,10 @@
 
 @font-face {
   font-family: vogue;
-  src: url('../public/fonts/theme3-fonts/Vogue.otf');
+  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.ttf');
+  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.eot');
+  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.woff');
+  src: url('../public/fonts/theme3-fonts/allfonts/Vogue-Regular.woff2');
 }
 
 * {
