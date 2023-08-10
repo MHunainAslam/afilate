@@ -31,7 +31,7 @@ const Footer2 = ({ season, country, data }) => {
                                             <Link className='ms-0' href="#">Terms Of Use</Link>
                                         </li>
                                         <li className='mb-1'>
-                                            <Link className='ms-0' href="#">Contact Us</Link>
+                                            <Link className='ms-0' href="/contact">Contact Us</Link>
                                         </li>
 
                                     </ul>
@@ -49,7 +49,7 @@ const Footer2 = ({ season, country, data }) => {
                                             <Link className='ms-0' href="#">Terms Of Use</Link>
                                         </li>
                                         <li className='mb-1'>
-                                            <Link className='ms-0' href="#">Contact Us</Link>
+                                            <Link className='ms-0' href="/contact">Contact Us</Link>
                                         </li>
 
                                     </ul>
@@ -67,7 +67,7 @@ const Footer2 = ({ season, country, data }) => {
                                             <Link className='ms-0' href="#">Terms Of Use</Link>
                                         </li>
                                         <li className='mb-1'>
-                                            <Link className='ms-0' href="#">Contact Us</Link>
+                                            <Link className='ms-0' href="/contact">Contact Us</Link>
                                         </li>
                                     </ul>
                                 </div>

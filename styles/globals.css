@@ -845,11 +845,13 @@ div.list-group>a {
   font-family: var(--nato);
   font-size: 1rem !important;
 }
+
 .theme3-heading-m-sub p {
   color: #4A494A;
   font-family: var(--nato);
   font-size: 0.8rem !important;
 }
+
 .theme3-heading-m-sub-ex p {
   font-family: var(--nato);
   font-size: 0.8rem !important;
@@ -864,6 +866,17 @@ div.list-group>a {
 .theme3-submit-btn {
   background-color: transparent;
   border: 1px solid #2A388A;
+  transition: 0.3s;
+}
+
+.theme3-submit-btn:hover {
+  background-color: #2A388A;
+
+}
+
+.theme3-submit-btn:hover a {
+  color: white;
+
 }
 
 .theme3-submit-btn a {
@@ -939,6 +952,17 @@ div.list-group>a {
   border-radius: 0.5rem;
   height: 100%;
 }
+.theme3-top-picks-2 {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .025), 0 2px 8px 0 rgba(0, 0, 0, .01);
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.theme3-top-picks-2 img{
+  border-radius: 0.5rem;
+}
 
 .top-picks-img {
   width: 20%;
@@ -952,7 +976,7 @@ div.list-group>a {
 }
 
 .theme-3-card .h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: var(--nato);
   /* font-weight: 600; */
   line-height: 1.1;
@@ -964,7 +988,7 @@ div.list-group>a {
   color: white;
   border-radius: 1rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   /* font-weight: 500; */
   text-align: center;
   width: -moz-fit-content;
@@ -981,7 +1005,7 @@ div.list-group>a {
   color: white;
   border-radius: 1rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   /* font-weight: 500; */
   text-align: center;
   width: -moz-fit-content;
@@ -1033,7 +1057,24 @@ div.list-group>a {
 .side-panel-theme-3 .side-img {
   height: 250px;
 }
+.cat-icon-3 img{
 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  margin: auto !important;
+  padding: 0;
+
+}
+.cat-icon-3{
+  position: relative !important;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-block: auto;
+  margin-inline-end: 10px;
+}
 @media (max-width:620px) {
   .theme-2-card {
     padding: 8px !important;

@@ -5,8 +5,18 @@ const Searchbar = () => {
 
     const [searchQuery, setSearchQuery] = useState([]);
     const [isActive, setIsActive] = useState(false);
-    const [query, setQuery] = useState('');
+    const [query, setQuery] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+
+    const body = document.getElementsByTagName('body')[0];
+    body.addEventListener('click', () => {
+      
+        setQuery(false)
+        setSearchQuery('')
+    })
+
+
+
 
     const handleSearch = (e) => {
 
@@ -39,7 +49,7 @@ const Searchbar = () => {
         <>
             <form className="" role="search">
                 <input className="form-control me-2 rounded-0 " type="search" placeholder="" aria-label="Search" onChange={(e) => handleSearch(e.target.value)} />
-                <div class="w-100 z-2 top-100 pl-0 position-absolute header-search">
+                <div class="w-100 z-2 top-100 pl-0 position-absolute header-search" id='searchbar' >
                     {
                         isActive &&
 

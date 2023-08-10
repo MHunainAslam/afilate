@@ -106,11 +106,11 @@ const sidepanel = ({ data, sidepanelapi, img }) => {
                         </div>
                     </div>
                     : data?.Style === 3 ?
-                        <div className="product-sidepanelapi side-panel-theme-3">
-                            <div className="side-img text-center mb-3 ">
+                        <div className=" product-sidepanelapi side-panel-theme-3">
+                            <div className="side-img text-center mb-3 theme3-top-picks-2">
                                 <Image src={`${!img ? '' : img + "/" + sidepanelapi?.data?.store?.logo}`} fill={true} className=' h-100 position-relative bg-white' />
                             </div>
-                            <div className='bg-white p-4'>
+                            <div className='bg-white p-4 theme3-top-picks-2'>
 
                                 <div className=''>
 
@@ -123,7 +123,7 @@ const sidepanel = ({ data, sidepanelapi, img }) => {
 
                                 </div>
                             </div>
-                            <div className='bg-white p-4 mt-3'>
+                            <div className='bg-white p-4 mt-3 bg-white theme3-top-picks-2'>
 
                                 <div className=''>
                                     <h4 className='my-2 fs-4 footerheading'>Subscribe!</h4>

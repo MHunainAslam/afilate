@@ -40,12 +40,14 @@ const index = ({ data, setMetas, metas }) => {
             <div className="min-vh-100">
                 {err ? "Something Went Wrong" :
                     <div className="container">
-                        <div className="">
-                            <h3 className='ps-0 my-3'>Browse Your Coupon By Store</h3>
-                            <div className='ps-0'>
-                                <Pagination words={words} />
+                        {data.Style === 3 ? '' :
+                            <div className="">
+                                <h3 className='ps-0 my-3'>Browse Your Coupon By Store </h3>
+                                <div className='ps-0'>
+                                    <Pagination words={words} />
+                                </div>
                             </div>
-                        </div>
+                        }
                         <div className="row my-5 w-100 mx-auto">
                             {words?.map((itm) => <>
                                 <div class="col-12 page-link" id={`${itm}`}>

@@ -3,9 +3,11 @@ import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import Layout from '../Layout';
+import couponph from '../../public/assets/blog/placeholder.jpg'
+import Image from 'next/image';
 
 
- 
+
 
 
 
@@ -37,11 +39,31 @@ const categories = ({ data, metas, setMetas }) => {
 
 
         <div className='container my-5'>
-            <h3>CODES FOR YOUR FAVOURITE CATEGORIES</h3>
+            {data.Style === 3 ?
+
+                <h3 className='theme3-heading'>Latest Discounts By CATEGORIES
+                </h3>
+                :
+                <h3 className=''>CODES FOR YOUR FAVOURITE CATEGORIES</h3>
+
+            }
             <div className="row bg-white py-3 px-2">
 
                 {favcat?.map((item) => {
-                    return <div className="col-md-4 col-6  favcat"><Link href={`/category/${item.slug}`}>{item.name}</Link></div>
+                    return <div className="col-md-4 col-6  favcat">
+                        {data.Style === 3 ?
+                            <div className="d-flex">
+                                <div className='cat-icon-3'>
+                                    <Image fill={true} src={couponph} alt="" className='w-100' />
+
+                                </div>
+                                <Link href={`/category/${item.slug}`}>{item.name}</Link>
+                            </div>
+                            :
+                            <Link href={`/category/${item.slug}`}>{item.name}</Link>
+
+                        }
+                    </div>
                 })}
 
             </div>
