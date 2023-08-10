@@ -10,7 +10,7 @@ export default function StoreItem({ styledata, item, img, cols, head, allStorez,
             <Link href={`/store/${item.slug}`} className='d-block h-100'>
                 <div className={`card-hover card rounded-0  popular-img-card ${head === true ? 'h-100' : theme3 ? 'h-100 py-3' : ''} `}>
                     {styledata?.Style === 3 ? <div className="card-body d-flex justify-content-center">
-                        <p className='toppick-card-title fw-bold my-auto text-center'>
+                        <p className='toppick-card-title  my-auto text-center'>
                             {item.name}
                         </p>
                     </div> :
