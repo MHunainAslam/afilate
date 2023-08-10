@@ -954,7 +954,7 @@ div.list-group>a {
 .theme-3-card .h3 {
   font-size: 1.5rem;
   font-family: var(--nato);
-  font-weight: 600;
+  /* font-weight: 600; */
   line-height: 1.1;
   letter-spacing: -.01em;
 }

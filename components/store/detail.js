@@ -100,26 +100,27 @@ const detail = ({ storedetailapi, store, img, data }) => {
                         </div>
                     </div>
                 </div>
-                }
+            }
             {/* </>
             }
             
             {expir
                 && <> */}
+            {data.Style === 3 ? "" :
+                <>
+                    <h2 className='text-start fw-500 mb-0 mt-3'>Expired {storedetailapi?.data?.store.name} Coupons & Promo Codes</h2>
+                    <div className="text-expired">
 
-         
-                <h2 className='text-start fw-500 mb-0 mt-3'>Expired {storedetailapi?.data?.store.name} Coupons & Promo Codes</h2>
-                <div className="text-expired">
+                        {storedetailapi?.data?.coupon?.map((item) => {
 
-                    {storedetailapi?.data?.coupon?.map((item) => {
+                            return new Date(item.expire_date) > new Date() ?
+                                '' :
+                                <Expire data={data} expire={item} img={img + "/" + storedetailapi?.data?.store?.logo} />
 
-                        return new Date(item.expire_date) > new Date() ?
-                            '' :
-                            <Expire data={data} expire={item} img={img + "/" + storedetailapi?.data?.store?.logo} />
-
-                    })}
-                </div>
-          
+                        })}
+                    </div>
+                </>
+            }
 
             {/* </>
             } */}
