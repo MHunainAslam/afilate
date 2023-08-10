@@ -70,7 +70,7 @@ const Couponcard = ({ data, item, img }) => {
                                     </div>
                                     <div className='col-md-6 mb-4 mb-md-0'>
                                         <Link href={`/store/${item.store_slug}`}> <h5 class="toppick-card-brand">{item.store_name}</h5></Link>
-                                        <h3 class="toppick-card-title fw-bold" dangerouslySetInnerHTML={{ __html: item.title }}></h3>
+                                        <h3 class="toppick-card-title " dangerouslySetInnerHTML={{ __html: item.title }}></h3>
                                     </div>
                                     <div className="col-md-3 theme3-btn">
                                         {!item?.code ?
